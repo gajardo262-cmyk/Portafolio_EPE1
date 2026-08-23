@@ -644,3 +644,145 @@ p {
   padding: 5px 10px;
   font-size: 12px;
 }
+
+/* Experiencia */
+
+/* --------------------------------------------------------------------------
+   10. EXPERIENCIA
+   -------------------------------------------------------------------------- */
+
+.experience-page {
+  padding: 80px 0;
+}
+
+.experience-head {
+  max-width: 760px;
+  margin-bottom: 70px;
+}
+
+.experience-head h1 {
+  margin-bottom: 18px;
+}
+
+.experience-head h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #d62828;
+  margin-top: 12px;
+}
+
+.experience-head > p:last-child {
+  line-height: 1.7;
+}
+
+
+/* columnas académica y laboral */
+
+.experience-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+
+/* títulos de las columnas */
+
+.career-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.career-title > span {
+  color: #d62828;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.career-title p {
+  color: #8f8f8f;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.career-title h2 {
+  color: #eec53d;
+  font-size: 23px;
+  margin: 0;
+}
+
+
+/* línea de trayectoria */
+
+.career-list {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #303030;
+}
+
+.career-item {
+  position: relative;
+  padding: 0 0 45px 20px;
+}
+
+.career-item:last-child {
+  padding-bottom: 0;
+}
+
+
+/* puntos de la línea */
+
+.career-item::before {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #111111;
+  border: 2px solid #d62828;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.career-item:hover::before {
+  background-color: #eec53d;
+  border-color: #eec53d;
+}
+
+
+/* información de cada experiencia */
+
+.career-status {
+  display: block;
+  color: #d62828;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.career-item h3 {
+  color: #f5f5f5;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.career-item h4 {
+  color: #eec53d;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.career-item p {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}

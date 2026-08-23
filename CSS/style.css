@@ -79,3 +79,53 @@ p {
   letter-spacing: 1.5px;
   margin-bottom: 16px;
 }
+
+/* barra de navegación */
+
+
+.navbar {
+  background-color: #181818;
+  padding: 16px 0;
+  border-bottom: 1px solid #303030;
+}
+
+.navbar-brand {
+  color: #eec53d;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #d62828;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  gap: 12px;
+}
+
+.navbar .nav-link {
+  color: #c7c7c7;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active {
+  color: #d62828;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active:hover {
+  color: #eec53d;
+}
+
+.navbar-toggler {
+  border: 1px solid #eec53d;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}

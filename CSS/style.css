@@ -939,3 +939,123 @@ p {
 .form-message.show {
   display: block;
 }
+
+/* Diseño responsive */
+
+/* tablet */
+
+@media (max-width: 992px) {
+  .hero {
+    min-height: auto;
+    padding: 70px 0;
+  }
+
+  .timeline-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .learning-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* celular */
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 15px;
+    gap: 5px;
+  }
+
+  .hero,
+  .projects,
+  .work-projects,
+  .skills-page,
+  .experience-page,
+  .contact-page {
+    padding: 60px 0;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-info {
+    margin-top: 45px;
+    padding: 24px;
+  }
+
+  .timeline {
+    padding: 60px 0;
+  }
+
+  .timeline-list {
+    grid-template-columns: 1fr;
+    border-top: none;
+    border-left: 2px solid #303030;
+  }
+
+  .timeline-item {
+    border-right: none;
+    border-bottom: 1px solid #303030;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 24px;
+  }
+
+  .learning-list {
+    grid-template-columns: 1fr;
+  }
+
+  .technical-row {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+  }
+
+  .technical-tag {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .experience-columns {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .contact-form {
+    padding: 24px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

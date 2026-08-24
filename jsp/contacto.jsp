@@ -65,7 +65,9 @@
 
 <!doctype html>
 <html lang="es">
+
   <head>
+
     <meta charset="UTF-8" />
 
     <meta
@@ -80,13 +82,15 @@
       content="Página de contacto del portafolio de Roberto Gajardo."
     />
 
-  
+    <!--bootstrap-->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    
+    <!--tipografía-->
+
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -103,20 +107,25 @@
       rel="stylesheet"
     />
 
->
+    <!--css propio-->
+
     <link
       rel="stylesheet"
       href="../CSS/style.css"
     />
+
   </head>
+
 
   <body>
 
-   
+    <!--barra de navegación-->
+
     <nav
       class="navbar navbar-expand-lg"
       aria-label="Barra de navegación"
     >
+
       <div class="container">
 
         <a
@@ -135,52 +144,69 @@
           aria-expanded="false"
           aria-label="Abrir menú de navegación"
         >
+
           <span class="navbar-toggler-icon"></span>
+
         </button>
+
 
         <div
           class="collapse navbar-collapse"
           id="navbarNav"
         >
+
           <ul class="navbar-nav">
 
             <li class="nav-item">
+
               <a
                 class="nav-link"
                 href="../Portafolio/index.html"
               >
                 Inicio
               </a>
+
             </li>
 
+
             <li class="nav-item">
+
               <a
                 class="nav-link"
                 href="proyectos.jsp"
               >
                 Proyectos
               </a>
+
             </li>
 
+
             <li class="nav-item">
+
               <a
                 class="nav-link"
                 href="../Portafolio/habilidades.html"
               >
                 Habilidades
               </a>
+
             </li>
 
+
             <li class="nav-item">
+
               <a
                 class="nav-link"
                 href="../Portafolio/experiencia.html"
               >
                 Experiencia
               </a>
+
             </li>
 
+
             <li class="nav-item">
+
               <a
                 class="nav-link active"
                 aria-current="page"
@@ -188,12 +214,15 @@
               >
                 Contacto
               </a>
+
             </li>
 
           </ul>
+
         </div>
 
       </div>
+
     </nav>
 
 
@@ -202,6 +231,7 @@
       <!--contacto-->
 
       <section class="contact-page">
+
         <div class="container">
 
           <div class="contact-head">
@@ -373,6 +403,7 @@
           </div>
 
         </div>
+
       </section>
 
     </main>
@@ -381,6 +412,7 @@
     <!--footer-->
 
     <footer class="footer">
+
       <div class="container">
 
         <p>
@@ -398,6 +430,7 @@
         </a>
 
       </div>
+
     </footer>
 
 
@@ -408,4 +441,5 @@
     ></script>
 
   </body>
+
 </html>

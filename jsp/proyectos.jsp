@@ -4,12 +4,6 @@
 <!doctype html>
 <html lang="es">
   <head>
-<!--css propio-->
-<link
-  rel="stylesheet"
-  href="<%= request.getContextPath() %>/CSS/style.css"
-/>
-</style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -29,17 +23,13 @@
     <!--tipografía-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
 
     <!--css propio-->
-    <link
-      rel="stylesheet"
-      href="<%= request.getContextPath() %>/CSS/style.css"
-    />
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
 
   <body>
@@ -49,7 +39,7 @@
     <nav class="navbar navbar-expand-lg" aria-label="Barra de navegación">
       <div class="container">
 
-        <a class="navbar-brand" href="<%= request.getContextPath() %>/index.jsp">
+        <a class="navbar-brand" href="../Portafolio/index.html">
           Roberto Gajardo
         </a>
 
@@ -69,7 +59,7 @@
           <ul class="navbar-nav">
 
             <li class="nav-item">
-              <a class="nav-link" href="<%= request.getContextPath() %>/index.jsp">
+              <a class="nav-link" href="../Portafolio/index.html">
                 Inicio
               </a>
             </li>
@@ -169,7 +159,6 @@
                   while (resultado.next()) {
             %>
 
-
             <article class="project-card">
 
               <span class="project-number">
@@ -185,15 +174,12 @@
               </p>
 
               <div class="project-technologies">
-
                 <span>
                   <%= resultado.getString("tecnologias") %>
                 </span>
-
               </div>
 
             </article>
-
 
             <%
                   }
@@ -205,12 +191,10 @@
               } catch (Exception e) {
             %>
 
-
             <div class="alert alert-danger">
               <strong>Error al cargar los proyectos:</strong>
               <%= e.getMessage() %>
             </div>
-
 
             <%
               }
@@ -228,7 +212,6 @@
         <div class="container">
 
           <div class="projects-head">
-
             <p class="eyebrow">
               Experiencia en terreno
             </p>
@@ -241,23 +224,16 @@
               Algunos de los proyectos y faenas en los que he participado
               durante mi trayectoria en minería y sondaje.
             </p>
-
           </div>
 
 
           <div class="projects-grid">
 
-            <!--proyecto laboral 01-->
-
             <article class="project-card">
 
-              <span class="project-number">
-                01
-              </span>
+              <span class="project-number">01</span>
 
-              <h3>
-                Proyecto Exploración La Negra
-              </h3>
+              <h3>Proyecto Exploración La Negra</h3>
 
               <p class="work-location">
                 Mina El Teniente
@@ -277,25 +253,19 @@
             </article>
 
 
-            <!--proyecto laboral 02-->
-
             <article class="project-card">
 
-              <span class="project-number">
-                02
-              </span>
+              <span class="project-number">02</span>
 
-              <h3>
-                Exploración Gold Fields
-              </h3>
+              <h3>Exploración Gold Fields</h3>
 
               <p class="work-location">
                 Minera Gold Fields
               </p>
 
               <p>
-                Participación en trabajos de exploración, desempeñándome
-                como ayudante de sondaje y ampliando mi experiencia en terreno.
+                Participación en trabajos de exploración, desempeñándome como
+                ayudante de sondaje y ampliando mi experiencia en terreno.
               </p>
 
               <div class="project-technologies">
@@ -307,17 +277,11 @@
             </article>
 
 
-            <!--proyecto laboral 03-->
-
             <article class="project-card">
 
-              <span class="project-number">
-                03
-              </span>
+              <span class="project-number">03</span>
 
-              <h3>
-                Faena Züblin
-              </h3>
+              <h3>Faena Züblin</h3>
 
               <p class="work-location">
                 Mina El Teniente
@@ -337,17 +301,11 @@
             </article>
 
 
-            <!--proyecto laboral 04-->
-
             <article class="project-card">
 
-              <span class="project-number">
-                04
-              </span>
+              <span class="project-number">04</span>
 
-              <h3>
-                Faena 479
-              </h3>
+              <h3>Faena 479</h3>
 
               <p class="work-location">
                 Chuquicamata Subterránea
@@ -380,8 +338,7 @@
       <div class="container">
 
         <p>
-          &copy; 2026 Roberto Gajardo.
-          Todos los derechos reservados.
+          &copy; 2026 Roberto Gajardo. Todos los derechos reservados.
         </p>
 
         <a
